@@ -10,7 +10,7 @@ spawn(function()
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
     wait(1.5)
     require(game.ReplicatedStorage.Notification).new("<Color=Red> Welcome To Truong Hub <Color=/>"):Display()
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Discord : Join Trường's Discord to Get the Latest Information <Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Discord : Join Truong's Discord to Get the Latest Information <Color=/>"):Display()
 end)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
@@ -25,11 +25,11 @@ local Window =
     Fluent:CreateWindow(
     {
         Title = "Truong Hub",
-        SubTitle = "Creator by trường Hub",
+        SubTitle = "create by truong Hub",
         TabWidth = 160,
         Size = UDim2.fromOffset(530, 350),
         Acrylic = true,
-        Theme = "Aqua",
+        Theme = "dark",
         MinimizeKey = Enum.KeyCode.End
     }
 )
@@ -40,7 +40,7 @@ local Tabs = {
     Stats = Window:AddTab({Title = "Stats", Icon = "plus-circle"}),
     Player = Window:AddTab({Title = "Player", Icon = "baby"}),
     Teleport = Window:AddTab({Title = "Island", Icon = "palmtree"}),
-    Fruit = Window:AddTab({Title = "Fruit", Icon = "cherry"}),
+    Fruit = Window:AddTab({Title = "Fruits", Icon = "cherry"}),
     Raid = Window:AddTab({Title = "Raid", Icon = "swords"}),
     Race = Window:AddTab({Title = "Race V4", Icon = "chevrons-right"}),
     Shop = Window:AddTab({Title = "Shop", Icon = "shopping-cart"}),
@@ -51,13 +51,13 @@ local Options = Fluent.Options
 do
     Tabs.Discord:AddButton(
         {
-            Title = "Copy Discord Trường Hub | community",
-            Description = "",
+            Title = "Copy Link discord",
+            Description = "https://discord.com/invite/BngjtBARNG",
             Callback = function()
                 setclipboard("https://discord.com/invite/BngjtBARNG")
                 Fluent:Notify(
                     {
-                        Title = "Truong Hub",
+                        Title = "TRUONG Hub",
                         Content = "Copied!",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
@@ -74,7 +74,7 @@ do
                 setclipboard("https://discord.com/invite/BngjtBARNG")
                 Fluent:Notify(
                     {
-                        Title = "Truong Hub",
+                        Title = "TRUONG Hub",
                         Content = "Copied!",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
@@ -4070,7 +4070,7 @@ do
     ToggleButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
     ToggleButton.Size = UDim2.new(0, 50, 0, 50)
     ToggleButton.Font = Enum.Font.SourceSans
-    ToggleButton.Text = "AnBaToComHub"
+    ToggleButton.Text = "PhuRoblox"
     ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     ToggleButton.TextSize = 14.000
     ToggleButton.Draggable = true
@@ -10185,7 +10185,7 @@ Tabs.Misc:AddButton(
                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buy" .. v, true) == 1
                  then
                     local huhu = Instance.new("ImageLabel", MeleeG)
-                    huhu.Image = "rbxassetid://16108163882"
+                    huhu.Image = "rbxassetid://16107907683"
                     huhu.ImageRectSize = Vector2.new(100, 100)
                     huhu.ImageRectOffset = ListHuhu[v] * 100
                 end
